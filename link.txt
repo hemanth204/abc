@@ -1,0 +1,10 @@
+Get-NetFirewallPortFilter | ?{$_.LocalPort -eq 5985 } | Get-NetFirewallRule | ?{ $_.Direction –eq "Inbound" -and $_.Profile -eq "Public" -and $_.Action –eq "Allow"} | Set-NetFirewallRule -RemoteAddress "Any"
+modified  ....jjsdflsdlkfmlks modification......... 
+
+
+knife bootstrap windows winrm 192.168.145.134 --winrm-user vagrant --winrm-password 'vagrant' --node-name node1-windows --run-list 'recipe[learn_chef_iis]'
+
+
+knife node list
+
+knife node show node1-windows
