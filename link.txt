@@ -1,4 +1,4 @@
-Get-NetFirewallPortFilter | ?{$_.LocalPort -eq 5985 } | Get-NetFirewallRule | ?{ $_.Direction –eq "Inbound" -and $_.Profile -eq "Public" -and $_.Action –eq "Allow"} | Set-NetFirewallRule -RemoteAddress "Any"
+Get-NetFirewallPortFilter | ?{$_.LocalPort -eq 5985 } | Get-NetFirewallRule | ?{ $_.Direction â€“eq "Inbound" -and $_.Profile -eq "Public" -and $_.Action â€“eq "Allow"} | Set-NetFirewallRule -RemoteAddress "Any"
 modified  ....jjsdflsdlkfmlks modification......... 
 
 
@@ -11,3 +11,5 @@ knife node show node1-windows
 
 
 modified file to pass into remote
+
+editing in remote
