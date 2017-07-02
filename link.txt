@@ -8,3 +8,6 @@ knife bootstrap windows winrm 192.168.145.134 --winrm-user vagrant --winrm-passw
 knife node list
 
 knife node show node1-windows
+
+
+modified file to pass into remote
